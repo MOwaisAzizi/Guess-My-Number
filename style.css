@@ -15,7 +15,6 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
 /* LAYOUT */
@@ -71,10 +70,11 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 2rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
+  color: rgb(8, 234, 11);
 }
 
 .again {
@@ -111,7 +111,7 @@ h1 {
 }
 
 .message {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   height: 3rem;
 }
 
@@ -149,5 +149,8 @@ h1 {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .between {
+    font-size: 1.4rem;
   }
 }
