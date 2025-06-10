@@ -10,7 +10,6 @@ function displaymessage(message) {
 
 document.querySelector(".check").addEventListener('click', function () {
     let guess = Number(document.querySelector('.guess').value);
-    
 
     if (!guess) {
         document.querySelector('.message').textContent = '⛔ not guess ?'
@@ -28,18 +27,18 @@ document.querySelector(".check").addEventListener('click', function () {
     }
     else if (guess !== secretnumber) {
         if (score > 1) {
-            if(guess >= 1 && guess <=100){
-            displaymessage(guess > secretnumber ? `❌ ${guess} is high` : `❌ ${guess} is low`)
-            score--;
-            document.querySelector('.score').textContent = score;
-            document.querySelector('.guess').value = ''
+            if (guess >= 1 && guess <= 100) {
+                displaymessage(guess > secretnumber ? `❌ ${guess} is high` : `❌ ${guess} is low`)
+                score--;
+                document.querySelector('.score').textContent = score;
+                document.querySelector('.guess').value = ''
 
-        }else{
-            displaymessage('⛔ Not Valid Range!')
+            } else {
+                displaymessage('⛔ Not Valid Range!')
+            }
         }
-    }
         else {
-            document.querySelector('.score').textContent = ` ${score-1} : 🔥 You lost the game `;
+            document.querySelector('.score').textContent = ` ${score - 1} : 🔥 You lost the game `;
             document.querySelector('body').style.backgroundColor = 'red';
         }
     }
